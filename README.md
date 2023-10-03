@@ -1,4 +1,4 @@
-# Nerfies
+# Kosmos-G
 
 This is the repository that contains source code for the [Kosmos-G website](https://xichenpan.com/kosmosg).
 
