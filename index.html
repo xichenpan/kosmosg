@@ -2,23 +2,23 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="description"
-          content="Generating Images in Context with Multimodal Large Language Models">
-    <meta name="keywords"
-          content="vision-language-to-image, zero-shot subject-driven generation, kosmos, multimodal large language model">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Generating Images in Context with Multimodal Large Language Models"
+          name="description">
+    <meta content="vision-language-to-image, zero-shot subject-driven generation, kosmos, multimodal large language model"
+          name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Kosmos-G: Generating Images in Context with Multimodal Large Language Models</title>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
           rel="stylesheet">
 
-    <link rel="stylesheet" href="./static/css/bulma.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="./static/css/index.css">
+    <link href="./static/css/bulma.min.css" rel="stylesheet">
+    <link href="./static/css/bulma-carousel.min.css" rel="stylesheet">
+    <link href="./static/css/bulma-slider.min.css" rel="stylesheet">
+    <link href="./static/css/fontawesome.all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+          rel="stylesheet">
+    <link href="./static/css/index.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -33,9 +33,9 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav aria-label="main navigation" class="navbar" role="navigation">
     <div class="navbar-brand">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger" role="button">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -82,22 +82,22 @@
                     <h1 class="title is-1 publication-title"><span class="textsc">Kosmos-G</span>: Generating Images in
                         Context with Multimodal Large Language Models</h1>
                     <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://xichenpan.com">Xichen Pan</a><sup>1,2</sup>,</span>
                         <span class="author-block">
-              <a href="https://dong.li">Li Dong</a><sup>1</sup>,</span>
+                          <a href="https://xichenpan.com">Xichen Pan</a><sup>1,2</sup>,</span>
                         <span class="author-block">
-              <a href="https://buaahsh.github.io">Shaohan Huang</a><sup>1</sup>,
-            </span>
+                          <a href="https://dong.li">Li Dong</a><sup>1</sup>,</span>
                         <span class="author-block">
-              <a href="https://pengzhiliang.github.io">Zhiliang Peng</a><sup>1</sup>,
-            </span>
+                          <a href="https://buaahsh.github.io">Shaohan Huang</a><sup>1</sup>,
+                        </span>
                         <span class="author-block">
-              <a href="https://wenhuchen.github.io">Wenhu Chen</a><sup>3</sup>,
-            </span>
+                          <a href="https://pengzhiliang.github.io">Zhiliang Peng</a><sup>1</sup>,
+                        </span>
                         <span class="author-block">
-              <a href="https://thegenerality.com">Furu Wei</a><sup>1</sup>
-            </span>
+                          <a href="https://wenhuchen.github.io">Wenhu Chen</a><sup>3</sup>,
+                        </span>
+                        <span class="author-block">
+                          <a href="https://thegenerality.com">Furu Wei</a><sup>1</sup>
+                        </span>
                     </div>
 
                     <div class="is-size-5 publication-authors">
@@ -110,26 +110,28 @@
                         <div class="publication-links">
                             <!-- PDF Link. -->
                             <span class="link-block">
-                <a href="https://arxiv.org/abs/2310.02992"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
+                                <a class="external-link button is-normal is-rounded is-dark"
+                                   href="https://arxiv.org/abs/2310.02992">
+                                  <span class="icon">
+                                      <i class="ai ai-arxiv"></i>
+                                  </span>
+                                  <span>Paper</span>
+                                </a>
+                              </span>
                             <!-- Code Link. -->
                             <span class="link-block">
-                <a href="https://aka.ms/Kosmos-G"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
+                                <a class="external-link button is-normal is-rounded is-dark"
+                                   href="https://aka.ms/Kosmos-G">
+                                  <span class="icon">
+                                      <i class="fab fa-github"></i>
+                                  </span>
+                                  <span>Code</span>
+                                  </a>
+                          </span>
                         </div>
-
+                    </div>
+                    <div class="is-size-5 publication-authors">
+                        ICLR 2024
                     </div>
                 </div>
             </div>
@@ -142,7 +144,9 @@
         <div class="hero-body">
             <img src="./static/images/teaser.png"/>
             <h2 class="subtitle has-text-centered">
-                Zero-shot image generation examples with multimodal prompts. <span class="textsc">Kosmos-G</span> regards all image inputs as a “foreign language”. It can perceive generalized vision-language inputs that span multiple images and faithfully generate images.
+                Zero-shot image generation examples with multimodal prompts. <span class="textsc">Kosmos-G</span>
+                regards all image inputs as a “foreign language”. It can perceive generalized vision-language inputs
+                that span multiple images and faithfully generate images.
             </h2>
         </div>
     </div>
@@ -179,20 +183,36 @@
     <div class="container is-max-desktop">
         <div class="column is-centered has-text-centered">
             <h2 class="title is-3">Approch</h2>
-            <img src="./static/images/arch.png" , width="90%"/>
+            <img , src="./static/images/arch.png" width="90%"/>
             <div class="content has-text-justified">
-                <span class="textsc">Kosmos-G</span> is a model that can perceive general modalities, follow instructions, and generate image conditions.
-                It comprises an MLLM for multimodal perception, coupled with an AlignerNet that bridges the MLLM to the diffusion U-Net image decoder. <span class="textsc">Kosmos-G</span> can pass the fine concept-level guidance from interleaved input to image decoder, and offer a seamless alternative to CLIP.
-                Specifically, the backbone of <span class="textsc">Kosmos-G</span> MLLM is a Transformer-based causal language model, serving as a general-purpose interface to multimodal input. We train <span class="textsc">Kosmos-G</span> following an "align before instruct" manner, the entire training pipeline can be divided into 3 stages:
+                <span class="textsc">Kosmos-G</span> is a model that can perceive general modalities, follow
+                instructions, and generate image conditions.
+                It comprises an MLLM for multimodal perception, coupled with an AlignerNet that bridges the MLLM to the
+                diffusion U-Net image decoder. <span class="textsc">Kosmos-G</span> can pass the fine concept-level
+                guidance from interleaved input to image decoder, and offer a seamless alternative to CLIP.
+                Specifically, the backbone of <span class="textsc">Kosmos-G</span> MLLM is a Transformer-based causal
+                language model, serving as a general-purpose interface to multimodal input. We train <span
+                    class="textsc">Kosmos-G</span> following an "align before instruct" manner, the entire training
+                pipeline can be divided into 3 stages:
 
                 <ol>
-                    <li><strong>Multimodal Language Modeling</strong>: We pre-train the MLLM on multimodal corpora, including monomodal data, cross-modal paired data, and interleaved multimodal data with language modeling loss following <span class="textsc">Kosmos-1</span>.
-                    <li><strong>Image Decoder Aligning</strong>: We use the U-Net of Stable Diffusion v1.5 as our image decoder. We trained an AlignerNet on only textual data to align the output space of <span class="textsc">Kosmos-G</span> to U-Net's input space through CLIP supervision. Here, the language acts as the anchoring modality, ensuring image input is also compatible with the image decoder.
-                    <li><strong>Instruction Tuning</strong>: We further fine-tune <span class="textsc">Kosmos-G</span> through a compositional generation task on curated data, with the differentiable gradient passed from the frozen U-Net.                </ol>
+                    <li><strong>Multimodal Language Modeling</strong>: We pre-train the MLLM on multimodal corpora,
+                        including monomodal data, cross-modal paired data, and interleaved multimodal data with language
+                        modeling loss following <span class="textsc">Kosmos-1</span>.
+                    <li><strong>Image Decoder Aligning</strong>: We use the U-Net of Stable Diffusion v1.5 as our image
+                        decoder. We trained an AlignerNet on only textual data to align the output space of <span
+                                class="textsc">Kosmos-G</span> to U-Net's input space through CLIP supervision. Here,
+                        the language acts as the anchoring modality, ensuring image input is also compatible with the
+                        image decoder.
+                    <li><strong>Instruction Tuning</strong>: We further fine-tune <span class="textsc">Kosmos-G</span>
+                        through a compositional generation task on curated data, with the differentiable gradient passed
+                        from the frozen U-Net.
+                </ol>
             </div>
             <img src="./static/images/construct_data.png"/>
             <div class="content has-text-justified">
-                We construct a large-scale dataset based on OpenImage V7 for instruction tuning, which contains around 9 million images.
+                We construct a large-scale dataset based on OpenImage V7 for instruction tuning, which contains around 9
+                million images.
             </div>
         </div>
 
@@ -208,7 +228,7 @@
             </div>
 
             <div class="hero-body">
-                <img src="./static/images/controlnet.png", width="80%"/>
+                <img , src="./static/images/controlnet.png" width="80%"/>
                 <h2 class="subtitle has-text-centered">
                     <span class="textsc">Kosmos-G</span> can seamlessly substitute CLIP and effortlessly integrate with
                     a myriad of U-Net techniques such as fine-grained controls by ControlNet.
@@ -216,9 +236,10 @@
             </div>
 
             <div class="hero-body">
-                <img src="./static/images/lora.png", width="60%"/>
+                <img , src="./static/images/lora.png" width="60%"/>
                 <h2 class="subtitle has-text-centered">
-                    <span class="textsc">Kosmos-G</span> can also work perfectly with customized image decoder variants. Left: with standard U-Net. Right: with LoRA fine-tuned U-Net.
+                    <span class="textsc">Kosmos-G</span> can also work perfectly with customized image decoder variants.
+                    Left: with standard U-Net. Right: with LoRA fine-tuned U-Net.
                 </h2>
             </div>
 
@@ -229,9 +250,9 @@
 
 
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{kosmos-g,
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{kosmos-g,
   author = {Pan, Xichen and Dong, Li and Huang, Shaohan and Peng, Zhiliang and Chen, Wenhu and Wei, Furu},
   journal = {ArXiv preprint},
   title = {Kosmos-G: Generating Images in Context with Multimodal Large Language Models},
@@ -239,7 +260,7 @@
   volume = {abs/2310.02992},
   year = {2023}
 }</code></pre>
-  </div>
+    </div>
 </section>
 
 
